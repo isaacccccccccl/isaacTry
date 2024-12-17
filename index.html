@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <h1>Touch The Num</h1>
+    <h2 class="what-num">touch the num <span></span></h2>
+
+    <table>
+        <tbody class="board">
+
+        </tbody>
+    </table>
+
+    </br>
+    <span class="timer-span">0 : 000</span>
+    </br>
+    <button class="restart" ondblclick="restartGame()">Restart</button>
+    </br>
+
+    <button class="9" onclick="createGnums(this)">9</button>
+    <button class="16" onclick="createGnums(this)">16</button>
+    <button class="25" onclick="createGnums(this)">25</button>
+    <button class="64" onclick="createGnums(this)">64</button>
+
+    <div class="modal">You Win!
+        <button class="button" onclick="restartGame()">restart</button>
+    </div>
+    <script src="js/Ex2.js"></script>
+</body>
+
+</html>
